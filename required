@@ -1,4 +1,4 @@
 apt update upgrade -y
 pkg update upgrade -y
 pkg install python git -y
-pip install -q httpx gitpython httpx requests bs4 -y
+pip install httpx gitpython httpx requests bs4 -y
