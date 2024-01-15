@@ -5,16 +5,16 @@ if __name__ == '__main__':
     try:
       if platform.machine() == "aarch64":
             subprocess.call(["bash", "turn", "switch"])
-            subprocess.call(["required"])
+            subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "SI32"])
             subprocess.call(["./SI32"])
       elif platform.machine() == "x86_64":
             subprocess.call(["bash", "turn", "switch"])
-            subprocess.call(["required"])
+            subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "SI32"])
             subprocess.call(["./SI32"])
       elif platform.machine() == "armv8l":
-            subprocess.call(["required"])
+            subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "SI32"])
             subprocess.call(["./SI32"])
       else:
