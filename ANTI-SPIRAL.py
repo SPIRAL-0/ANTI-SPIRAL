@@ -17,6 +17,10 @@ if __name__ == '__main__':
             subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "ANTI"])
             subprocess.call(["./ANTI"])
+      elif platform.machine() == "armv7l":
+            subprocess.call(["bash", "required"])
+            subprocess.call(["chmod", "+x", "ANTI"])
+            subprocess.call(["./ANTI"])
       else:
             print(f"YOUR {platform.machine()} bit, SUPPORT ONLY  aarch64 , armv8l , x86_64!")
             exit()
