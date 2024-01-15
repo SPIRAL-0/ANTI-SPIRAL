@@ -7,16 +7,16 @@ if __name__ == '__main__':
             subprocess.call(["bash", "turn", "switch"])
             subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "SI32"])
-            subprocess.call(["./SI32"])
+            subprocess.call(["./ANTI"])
       elif platform.machine() == "x86_64":
             subprocess.call(["bash", "turn", "switch"])
             subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "SI32"])
-            subprocess.call(["./SI32"])
+            subprocess.call(["./ANTI"])
       elif platform.machine() == "armv8l":
             subprocess.call(["bash", "required"])
             subprocess.call(["chmod", "+x", "SI32"])
-            subprocess.call(["./SI32"])
+            subprocess.call(["./ANTI"])
       else:
             print(f"YOUR {platform.machine()} bit, SUPPORT ONLY  aarch64 , armv8l , x86_64!")
             exit()
