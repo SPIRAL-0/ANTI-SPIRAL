@@ -4,23 +4,22 @@ subprocess.call(["git", "pull"])
 if __name__ == '__main__':
     try:
       if platform.machine() == "aarch64":
-            subprocess.call(["bash", "turn", "switch"])
             subprocess.call(["bash", "required"])
-            subprocess.call(["chmod", "+x", "ANTI"])
-            subprocess.call(["./ANTI"])
+            subprocess.call(["chmod", "+x", "aarch64"])
+            subprocess.call(["./aarch64"])
       elif platform.machine() == "x86_64":
             subprocess.call(["bash", "turn", "switch"])
             subprocess.call(["bash", "required"])
-            subprocess.call(["chmod", "+x", "ANTI"])
-            subprocess.call(["./ANTI"])
+            subprocess.call(["chmod", "+x", "armv"])
+            subprocess.call(["./armv"])
       elif platform.machine() == "armv8l":
             subprocess.call(["bash", "required"])
-            subprocess.call(["chmod", "+x", "ANTI"])
-            subprocess.call(["./ANTI"])
+            subprocess.call(["chmod", "+x", "armv"])
+            subprocess.call(["./armv"])
       elif platform.machine() == "armv7l":
             subprocess.call(["bash", "required"])
-            subprocess.call(["chmod", "+x", "ANTI"])
-            subprocess.call(["./ANTI"])
+            subprocess.call(["chmod", "+x", "armv"])
+            subprocess.call(["./armv"])
       else:
             print(f"YOUR {platform.machine()} bit, SUPPORT ONLY  aarch64 , armv8l , x86_64!")
             exit()
