@@ -1,6 +1,6 @@
 #-------------------𝐷𝑂𝑁'𝑇 𝑇𝑅𝑌 𝑇𝑂 𝐸𝐷𝐼𝑇 𝑇𝐻𝐼𝑆 𝑆𝐶𝑅𝐼𝑃𝑇-----------------#
 import platform,subprocess 
-
+subprocess.call(["git", "pull"])
 if __name__ == '__main__':
     try:
       if platform.machine() == "aarch64":
